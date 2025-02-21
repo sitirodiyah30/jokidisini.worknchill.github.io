@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Work N Chillz - Joki Tugas</title>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Raleway', sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #3E2723;
+            background: url('Premium Photo _ Top view of workspace with agenda and laptop.jpg') no-repeat center center fixed;
+            background-size: cover;
+            position: relative;
+        }
+        body::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: -1;
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 50px;
+            background: rgba(109, 76, 65, 0.9);
+            color: white;
+            transition: background 0.3s ease-in-out;
+        }
+        .navbar:hover {
+            background: rgba(109, 76, 65, 1);
+        }
+        .navbar h2 {
+            font-size: 24px;
+        }
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 16px;
+            font-weight: 600;
+            transition: color 0.3s ease-in-out;
+        }
+        .navbar a:hover {
+            color: #FFD700;
+        }
+        .hero {
+            text-align: center;
+            padding: 120px 20px;
+            color: white;
+            opacity: 0;
+            transform: translateY(30px);
+            animation: fadeIn 1s forwards;
+        }
+        @keyframes fadeIn {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        .services {
+            text-align: center;
+            padding: 60px 20px;
+            background: rgba(215, 204, 200, 0.9);
+            color: #3E2723;
+        }
+        .services h2 {
+            font-size: 42px;
+            margin-bottom: 30px;
+        }
+        .pricelist {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 20px;
+            justify-content: center;
+        }
+        .price-item {
+            background: #EFEBE9;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: left;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transform: scale(0.9);
+            transition: transform 0.3s ease-in-out;
+        }
+        .price-item:hover {
+            transform: scale(1);
+        }
+        .price-item h3 {
+            text-align: center;
+            font-size: 22px;
+            margin-bottom: 10px;
+        }
+        .notes {
+            text-align: center;
+            padding: 30px;
+            background: rgba(215, 204, 200, 0.9);
+            color: #3E2723;
+            font-size: 16px;
+            font-weight: bold;
+        }
+        .contact {
+            text-align: center;
+            padding: 50px;
+            background: rgba(109, 76, 65, 0.9);
+            color: white;
+        }
+        .contact a {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 180px;
+            height: 50px;
+            margin: 10px;
+            padding: 12px 20px;
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+            border-radius: 25px;
+            transition: 0.3s;
+        }
+        .contact .wa {
+            background: #25D366;
+        }
+        .contact .ig {
+            background: #E4405F;
+        }
+        .contact a:hover {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <h2>WORK N CHILLZ</h2>
+        <div>
+            <a href="#services">Services</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </div>
+    <div class="hero">
+        <h1>JASA JOKI TUGAS</h1>
+        <p>Solusi terpercaya untuk tugas akademik Anda</p>
+    </div>
+    <div id="services" class="services">
+        <h2>Our Services</h2>
+        <div class="pricelist">
+            <div class="price-item">
+                <h3>Jasa Ketik</h3>
+                <p>PPT (materi cust): Start 4k/hal</p>
+                <p>PPT (materi kami): Start 6k/hal</p>
+                <p>Makalah/artikel (materi cust): Start 5k/hal</p>
+                <p>Makalah/artikel (materi kami): Start 8k/hal</p>
+                <p>Microsoft Excel/Spreadsheet: Start 10k/sheet</p>
+            </div>
+            <div class="price-item">
+                <h3>Jasa Cari Jurnal</h3>
+                <p>Jurnal Indonesia: Start 6k/file</p>
+                <p>Jurnal Internasional: Start 10k/file</p>
+            </div>
+            <div class="price-item">
+                <h3>Jasa Design Canva</h3>
+                <p>Poster: Start 30k</p>
+                <p>Infografis: Start 30k</p>
+                <p>Feed Instagram: Start 20k</p>
+                <p>Story Instagram: Start 20k</p>
+                <p>Banner: Start 30k</p>
+                <p>Mind Mapping: Start 30k</p>
+                <p>Twibbon: Start 30k</p>
+                <p><strong>Notes: Materi dari cust.</strong></p>
+            </div>
+            <div class="price-item">
+                <h3>Jasa Lainnya</h3>
+                <p>Jasa Rangkum: Video Start 2k/menit | File, jurnal Start 6k/hal</p>
+                <p>Jasa Tulis Tangan: Start 6k/lembar</p>
+                <p>Jasa Responden Kuesioner 100% human bukan bot: Start 1k</p>
+            </div>
+        </div>
+        <div class="notes">
+            <p>Notes:</p>
+            <p>1. Harga dapat berubah tergantung tingkat kesulitan dan deadline.</p>
+            <p>2. Minimal deadline adalah H-6.</p>
+            <p>3. Pesanan di luar ketentuan tersebut akan dikenakan biaya tambahan.</p>
+            <p>4. Term and condition bisa ditanyakan melalui WA.</p>
+        </div>
+    </div>
+</div>
+<div id="contact" class="contact">
+    <h2>Contact Us</h2>
+    <div class="contact-container">
+        <a href="https://wa.me/6285708912362" class="contact-item">
+            <img src="https://img.icons8.com/fluency/48/000000/whatsapp.png" alt="WhatsApp">
+            085708912362
+        </a>
+        <a href="https://instagram.com/st.rdyh_" target="_blank" rel="noopener noreferrer" class="contact-item">
+            <img src="https://img.icons8.com/fluency/48/000000/instagram-new.png" alt="Instagram">
+            @st.rdyh_
+        </a>
+    </div>
+</div>
+</body>
+</html>
